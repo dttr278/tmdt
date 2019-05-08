@@ -45,7 +45,7 @@ public class ajaxServlet extends HttpServlet {
         String vnp_hashSecret = Config.vnp_HashSecret;
 
         int amount = Integer.parseInt(req.getParameter("amount")) * 100;
-        Map<String, String> vnp_Params = new HashMap<>();
+        Map<String, String> vnp_Params = new HashMap<String, String>();
         vnp_Params.put("vnp_Version", vnp_Version);
         vnp_Params.put("vnp_Command", vnp_Command);
         vnp_Params.put("vnp_TmnCode", vnp_TmnCode);
